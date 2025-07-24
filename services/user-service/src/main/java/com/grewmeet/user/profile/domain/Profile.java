@@ -27,4 +27,8 @@ public class Profile extends BaseEntity {
     public static Profile of(String userId, String email, String nickname, LocalDateTime registeredAt) {
         return new Profile(userId, email, nickname, registeredAt);
     }
+
+    public void updateProfile(String nickname) {
+        this.nickname = nickname;
+    }
 }

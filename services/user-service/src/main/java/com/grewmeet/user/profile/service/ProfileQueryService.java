@@ -1,7 +1,9 @@
 package com.grewmeet.user.profile.service;
 
-import com.grewmeet.user.profile.domain.Profile;
+import com.grewmeet.user.profile.dto.ProfileResponse;
+import java.util.List;
 
 public interface ProfileQueryService {
-    Profile getProfileByUserId(String userId);
+    ProfileResponse getProfileByUserId(String userId);
+    List<ProfileResponse> getAllProfiles();
 }
